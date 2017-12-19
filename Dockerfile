@@ -12,4 +12,4 @@ RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s
 
 USER jenkins
 RUN /usr/local/bin/install-plugins.sh docker-plugin kubernetes gitlab-hook blueocean \
-    jenkins-multijob-plugin pipeline-model-definition
+    jenkins-multijob-plugin pipeline-model-definition sonar
