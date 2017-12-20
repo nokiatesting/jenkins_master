@@ -11,5 +11,5 @@ RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s
     && mv ./kubectl /usr/local/bin/kubectl
 
 USER jenkins
-RUN /usr/local/bin/install-plugins.sh docker-plugin kubernetes gitlab-hook blueocean \
+RUN /usr/local/bin/install-plugins.sh docker-plugin kubernetes:1.1 gitlab-hook blueocean \
     jenkins-multijob-plugin pipeline-model-definition sonar
